@@ -1,0 +1,16 @@
+{{#each this}}
+<li class="gallery-item">
+    <div class="wrapper-video"> <video controls="controls" class="wrapper-video" src="{{videos.tiny.url}}"
+            data-src="{{videos.medium.url}}" width="{{videos.tiny.width}}" height=" {{videos.tiny.height}}"></video>
+    </div>
+
+    <div class="wrapper-details">
+        <p><i class="material-icons">thumb_up</i>{{likes}}</p>
+        <p><i class="material-icons">comment</i>{{comments}}</p>
+        <p><i class="material-icons">cloud_download</i>{{downloads}}</p>
+        <p><i class="material-icons">visibility</i>{{views}}</p>
+        <p><i class="material-icons">visibility</i> {{duration}}</p>
+    </div>
+
+</li>
+{{/each}}
